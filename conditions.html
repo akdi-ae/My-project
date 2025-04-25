@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Көшу ережелері</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+        }
+        	
+	header {
+		padding: 10px 0;
+		text-align: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.logo {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 60px;
+	}
+	
+	nav {
+		background-color: #1a1a50;
+		padding: 10px 30px;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+		margin: 20px auto;
+	}
+	
+	nav ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 20px;
+	}
+	
+	nav ul li {
+		transition: transform 0.3s ease;
+	}
+	
+	nav ul li:hover {
+		transform: scale(1.1);
+	}
+	
+	nav ul li a {
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+        /* Контейнер с правилами */
+        .rules-container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .rules-container h2 {
+            text-align: center;
+            color: #1a1a50;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .rules-container ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rules-container li {
+            font-size: 18px;
+            padding: 8px 0;
+            color: #333;
+            display: flex;
+            align-items: center;
+        }
+
+        .rules-container li strong {
+            color: #f7954c;
+            font-size: 20px;
+        }
+
+        .rules-container li::before {
+            content: "✔";
+            color: #1a1a50;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            color: #1a1a50;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            text-align: center;
+            color: #444;
+        }
+        footer {
+            background-color: #1a1a50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f7954c;
+            text-decoration: none;
+        }
+        .ass {
+            color: #fff;
+        }
+    </style>
+</head>
+<link href="favicon.png" rel="shortcut icon" type="image/png" />
+<body>
+    <header>
+        <img src="logo.png" alt="Логотип" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="dorms.html">Жатақханалар тізімі</a></li>
+                <li><a href="conditions.html">Орналасу үшін</a></li>
+                <li><a href="https://atu.edu.kz/">Университет парақшасы</a></li>
+                <li><a href="news.html">Жаңалықтар</a></li>
+                <li class="login-btn"><a href="vhod.html">Кіру</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="rules-container">
+        <h2>Орналасу ережелері</h2>
+        
+        <ul>
+            <li><strong>Орналасу үшін қажетті құжаттар:</strong></li>
+            <li>Жеке куәлік</li>
+            <li>Денсаулық анықтамасы</li>
+            <li>Фото 3x4</li>
+            <li>Төлем ақысы</li>
+        </ul>
+    
+        <p class="price"><strong>Бағасы:</strong> 150 000 теңге бір семестрге</p>
+    
+        <p><strong>Қоныстану мерзімі:</strong> 1-нен 10 қыркүйек арасы.</p>
+    </div>
+    
+    <footer>
+        <p class="ass">&copy; 2025 АТУ студенттер үйі.</p>
+        <p class="ass">Байланыс үшін: <a href="tel:+77474561232">+7 747 456 12 32</a></p>
+    </footer>
+</body>
+</html>

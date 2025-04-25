@@ -1,0 +1,228 @@
+body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #ffffff;
+	}
+	
+	header {
+		background-color: #1a1a50;
+		padding: 10px 0;
+		text-align: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.logo {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 60px;
+	}
+	
+	nav {
+		background-color: #1a1a50;
+		padding: 10px 30px;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+		margin: 20px auto;
+	}
+	
+	nav ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 20px;
+	}
+	
+	nav ul li {
+		transition: transform 0.3s ease;
+	}
+	
+	nav ul li:hover {
+		transform: scale(1.1);
+	
+	}
+
+	
+	main {
+		padding: 20px;
+	}
+	
+	footer {
+		background-color: #1a1a50;
+		color: #fff;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	
+	.footer-logo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	
+	.footer-logo img {
+		height: 60px;
+		margin-bottom: 10px;
+	}
+	
+	.footer-links, .footer-contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.footer-links a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 14px;
+	}
+	
+	.footer-social {
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		margin-bottom: 10px;
+	}
+	
+	.footer-social a {
+		color: #fff;
+		font-size: 20px;
+		text-decoration: none;
+	}
+	
+	.contact-button {
+		background-color: #f7954c;
+		color: #fff;
+		padding: 10px 15px;
+		border-radius: 5px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	
+	.footer-logo img {
+		height: 80px;
+	}
+	/* Общий контейнер */
+	.dormitory-container {
+		text-align: center;
+		padding: 50px 20px;
+		background-color: #f8f9fa;
+		background-image: url('bg-index-top.webp') ;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+	 object-fit: contain;
+	}
+	
+	/* Заголовок */
+	.dormitory-container h1 {
+		font-size: 36px;
+		font-weight: bold;
+		color: #1d1d6c;
+		margin-bottom: 15px;
+	}
+	
+	/* Подзаголовок */
+	.dormitory-container p {
+		font-size: 20px;
+		color: #f0e9e9;
+		max-width: 600px;
+		margin: 0 auto 20px;
+		line-height: 1.6;
+	}
+	
+	/* Кнопка */
+	.dormitory-container .review-btn {
+		display: inline-block;
+		background-color: #1a1a50;
+		color: white;
+		padding: 12px 24px;
+		font-size: 18px;
+		border-radius: 8px;
+		text-decoration: none;
+		transition: background-color 0.3s ease, transform 0.2s ease;
+	}
+	
+	/* Эффект при наведении */
+	.dormitory-container .review-btn:hover {
+		background-color: #f7954c;
+		transform: scale(1.05);
+	}
+	body {
+		font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #f4f4f4;
+	}
+	
+	/* Контейнер вкладок */
+	.tabs-container {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		padding: 20px;
+		max-width: 1200px;
+		margin: auto;
+	}
+	
+	/* Стили для каждой вкладки */
+	.tab {
+		background-color: #1a0269;
+		color: white;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		flex: 1;
+		max-width: 350px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	
+	/* Ховер-эффект */
+	.tab:hover {
+		transform: translateY(-5px);
+		box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	}
+	
+	/* Заголовки */
+	.tab h3 {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	
+	/* Адаптивность */
+	@media (max-width: 900px) {
+		.tabs-container {
+			flex-direction: column;
+				align-items: center;
+		}
+	
+		.tab {
+			max-width: 100%;
+				}
+	}
+	.menu li a {
+		text-decoration: none;
+		color: white; /* Цвет текста */
+		font-weight: bold;
+		font-size: 16px;
+		transition: color 0.3s ease;
+	 }
+	 
+	 .menu li a:hover {
+		color: #e1e1e1; /* Цвет текста при наведении */
+	 }

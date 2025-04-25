@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Жатақханалар тізімі</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        .dorm-list {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .dorm-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .dorm-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .dorm-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .dorm-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .dorm-info {
+            padding: 10px;
+        }
+
+        .rules-section {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .rules-links a {
+            display: block;
+            margin: 10px 0;
+            color: #1a1a50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #1a1a50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #f7954c;
+            text-decoration: none;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    .dorm-card img {
+    width: 100%; /* Занимает всю ширину карточки */
+    height: 200px; /* Фиксированная высота */
+    object-fit: cover; /* Обрезает изображение, чтобы оно заполняло контейнер без искажений */
+    border-radius: 10px; /* Скругление углов (если нужно) */
+}
+    </style>
+</head>
+<link href="favicon.png" rel="shortcut icon" type="image/png" />
+<body>
+    
+        <header>
+        <img src="logo.png" alt="Логотип" class="logo">
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Басты бет</a></li>
+                <li><a href="dorms.html">Жатақханалар тізімі</a></li>
+                <li><a href="conditions.html">Орналасу үшін</a></li>
+                <li><a href="https://atu.edu.kz/">Университет парақшасы</a></li>
+                <li><a href="news.html">Жаңалықтар</a></li>
+                <li class="login-btn"><a href="vhod.html">Кіру</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="dorm-list">
+        <h2>Жатақханалар тізімі</h2>
+    
+        <div class="dorm-container">
+            <div class="dorm-card">
+                <img src="1.jpg" alt="Жатақхана 1">
+                <div class="dorm-info">
+                    <h3>Жатақхана №1</h3>
+                    <p> <strong>Барлық орын саны:</strong> 476</p>
+                    <p> <strong>Бос орын саны:</strong> 246 </p>
+                    <p><strong>Мекен жайы:</strong>Бөгенбай батыр көшесі 157 </p>
+                </div>
+            </div>
+    
+            <div class="dorm-card">
+                <img src="2.jpg" alt="Жатақхана 2" width="100" height="100">
+                <div class="dorm-info">
+                    <h3>Жатақхана №2</h3>
+                    <p> <strong>Барлық орын саны:</strong> 672</p>
+                    <p> <strong>Бос орын саны:</strong> 211 </p>
+                    <p><strong>Мекен жайы:</strong>Многоводная, 4А </p>
+                </div>
+            </div>
+    
+            <div class="dorm-card">
+                <img src="3.jpg"  alt="Изображение">
+                <div class="dorm-info">
+                    <h3>Жатақхана №3</h3>
+                    <p> <strong>Барлық орын саны:</strong> 393</p>
+                    <p> <strong>Бос орын саны:</strong> 136 </p>
+                    <p><strong>Мекен жайы:</strong>Торайғыров көшесі,53 </p>
+                </div>
+            </div>
+    
+            <div class="dorm-card">
+                <img src="4.jpg"  alt="Изображение">
+                <div class="dorm-info">
+                    <h3>Жатақхана №4</h3>
+                    <p> <strong>Барлық орын саны:</strong> 391</p>
+                    <p> <strong>Бос орын саны:</strong> 136 </p>
+                    <p><strong>Мекен жайы:</strong>Әйтиев көшесі,96</p>
+                </div>
+            </div>
+    
+            <div class="dorm-card">
+                <img src="5.jpg" alt="Жатақхана 5" width=200px; height=200px >
+                <div class="dorm-info">
+                    <h3>Жатақхана №5</h3>
+                    <p> <strong>Барлық орын саны:</strong> 413</p>
+                    <p> <strong>Бос орын саны:</strong> 54 </p>
+                    <p><strong>Мекен жайы:</strong>Торайғыров көшесі, 45а </p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Блок с документами на двух языках -->
+        <div class="rules-section">
+            <p>Барлық жатақханаларға арналған ережелер:</p>
+            <div class="rules-links">
+                <a href="files/pol_kaz.pdf" download>📄 Ережелер (Қазақша)</a>
+                <a href="files/pol_rus.pdf" download>📄 Правила (Русский)</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 АТУ студенттер үйі.</p>
+        <p>Байланыс үшін: <a href="tel:+77474561232">+7 747 456 12 32</a></p>
+    </footer>
+</body>
+</html>

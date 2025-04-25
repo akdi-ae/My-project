@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тіркелу</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #e0e0e0);
+        }
+        	
+	header {
+		padding: 10px 0;
+		text-align: center;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.logo {
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 60px;
+	}
+	
+	nav {
+		background-color: #1a1a50;
+		padding: 10px 30px;
+		border-radius: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+		margin: 20px auto;
+	}
+	
+	nav ul {
+		list-style: none;
+		padding: 0;
+		display: flex;
+		gap: 20px;
+	}
+	
+	nav ul li {
+		transition: transform 0.3s ease;
+	}
+	
+	nav ul li:hover {
+		transform: scale(1.1);
+	}
+	
+	nav ul li a {
+		color: #fff;
+		text-decoration: none;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+        .register-container {
+            width: 100%;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .register-container h2 {
+            color: #1a1a50;
+        }
+
+        .input-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .register-container input {
+            width: calc(100% - 0px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            color: gray;
+        }
+
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1a1a50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .register-container button:hover {
+            background-color: #f7954c;
+        }
+        footer {
+            background-color: #1a1a50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<link href="favicon.png" rel="shortcut icon" type="image/png" />
+<body>
+    <div class="register-container">
+        <h2>Тіркелу</h2>
+        <form action="register.php" method="POST">
+            <input type="text" name="surname" placeholder="Тегі" required>
+            <input type="text" name="name" placeholder="Аты" required>
+            <input type="text" name="patronymic" placeholder="Әкесінің аты" required>
+            <input type="tel" name="phone" placeholder="Телефон нөмірі" required>
+            <label for="course">Факультет:</label>
+            <select id="course" name="faculty" required>
+                 <option value="1">-</option>
+                <option value="2">Инжиниринг және ақпараттық технологиялар факультеті</option>
+                 <option value="2">Дизайн, текстиль және киім технологиялары факультеті</option>
+                <option value="3">Тағам технологиялары факультеті</option>
+                <option value="4">Экономика және бизнес факультеті</option>
+            </select>
+            <input type="text" name="specialty" placeholder="Мамандығы" required>
+            <input type="text" name="email" placeholder="e-mail" id="email" required>
+            <label for="course">Курс:</label>
+            <select id="course" name="course" required>
+                <option value="1">1 курс</option>
+                <option value="2">2 курс</option>
+                <option value="3">3 курс</option>
+                <option value="4">4 курс</option>
+            </select>
+            
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Жаңа құпиясөз" required>
+                <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
+            <div class="input-container">
+                <input type="password" id="confirm-password" name="confirm_password" placeholder="Құпиясөзді қайталаңыз" required>
+                <span class="toggle-password" onclick="togglePassword('confirm-password')">👁️</span>
+            </div>
+            
+            <button type="submit">Тіркелу</button>
+        </form>
+        <p>Тіркелгенсіз бе? <a href="vhod.html">Кіру</a></p>
+    </div>
+    <script>
+        function togglePassword(id) {
+            let input = document.getElementById(id);
+            let eye = input.nextElementSibling;
+            if (input.type === "password") {
+                input.type = "text";
+                eye.textContent = "👁️";
+            } else {
+                input.type = "password";
+                eye.textContent = "🔒";
+            }
+        }
+    </script>
+</body>
+</html>
